@@ -25,7 +25,7 @@ module SerialMagnet
     end
 
     def issues
-      perform_get('issue', 'issues')
+      perform_get_all('issue', 'issues')
     end
 
     def media id
