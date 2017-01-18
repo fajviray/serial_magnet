@@ -14,6 +14,7 @@ module SerialMagnet
         result[key].each_with_index.map { |object, index| SerialMagnet::Object.new({ type => object.merge(number: index + 1) }) }
         response[key] = response[key] + result[key]
       end
+      return response[key]
     end
   end
 end
